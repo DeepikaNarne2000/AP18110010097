@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:layout_width="280dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:textSize="40dp"
+        android:textColor="#FAFAFB"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/fish"
+        android:background="@drawable/btn_shape"
+        android:text="Hooty Fish" />
+
+    <Button
+        android:layout_width="280dp"
+        android:layout_height="70dp"
+        android:text="Battle Drive"
+        android:textSize="38dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/RPS"
+        android:textColor="#EEEBF3"
+        android:background="@drawable/btn_shape"
+        android:id="@+id/fly"/>
+
+    <Button
+        android:layout_width="280dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/fish"
+        android:layout_marginTop="20dp"
+        android:textSize="39dp"
+        android:textColor="#FAFAFB"
+        android:id="@+id/RPS"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_shape"
+        android:text="Roshambo" />
+
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:textSize="45dp"
+        android:textColor="#FAFAFB"
+        android:id="@+id/exit"
+        android:layout_below="@+id/fly"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_shape"
+        android:text=" Exit " />
+
+    <ImageView
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="60dp"
+        android:id="@+id/volumeCtrl"
+        android:soundEffectsEnabled="true"
+        android:src="@drawable/ic_volume_up_black_24dp"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RPSinstructionActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/instrps"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="18dp"
+        android:fontFamily="monospace"
+        android:text="Instructions:"
+        android:textColor="#121111"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="18dp"
+        android:layout_below="@+id/txt"
+        android:id="@+id/instruction"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:fontFamily="serif-monospace"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_below="@id/instruction"
+        android:text="Rules:"
+        android:textStyle="bold"
+        android:textColor="#191818"
+        android:textSize="20dp"
+        android:fontFamily="monospace"
+        android:id="@+id/rtxt"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="18dp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/rtxt"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:id="@+id/rules"
+        android:fontFamily="serif-monospace"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_below="@id/rules"
+        android:text="Help:"
+        android:textStyle="bold"
+        android:textColor="#0E0E0E"
+        android:textSize="20dp"
+        android:fontFamily="monospace"
+        android:id="@+id/htxt"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="18dp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/htxt"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:id="@+id/help"
+        android:fontFamily="serif-monospace" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="170dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/start"
+        android:layout_below="@+id/help"
+        android:textSize="30sp"
+        android:fontFamily="monospace"
+        android:textColor="#0B0A0A"
+        android:textAlignment="center"
+        android:text="READY..?\nThen click NEXT"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/start"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:id="@+id/back"
+            android:layout_marginTop="20dp"
+            android:text="  Back  "
+            android:textSize="35dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/btn_shape" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_shape"
+            android:text="  Next  "
+            android:textColor="#FFFFFF"
+            android:textSize="35dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

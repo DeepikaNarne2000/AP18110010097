@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/inst"
+    tools:context=".FlyInstructionActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="20dp"
+        android:text="Instructions:"
+        android:textColor="#020202"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:fontFamily="monospace"
+        android:id="@+id/txt"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/txt"
+        android:id="@+id/instruction"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:fontFamily="serif-monospace"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/instruction"
+        android:text="Rules:"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:fontFamily="monospace"
+        android:id="@+id/rtxt"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/des"
+        android:layout_below="@+id/rtxt"
+        android:textSize="18sp"
+        android:fontFamily="serif-monospace"
+        android:textColor="#050505"
+        android:text="YELLOW BALL - 10 POINTS\nBLUE BALL - 20 POINTS\nRED BALL - LIFE LOST"/>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/des"
+        android:text="Help:"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:fontFamily="monospace"
+        android:id="@+id/htxt"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#000000"
+        android:layout_below="@id/htxt"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:id="@+id/help"
+        android:fontFamily="serif-monospace" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/click"
+        android:layout_below="@+id/help"
+        android:textSize="27sp"
+        android:fontFamily="monospace"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:text="READY..?\nThen click NEXT"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/click"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:id="@+id/back"
+            android:text="  Back  "
+            android:textSize="35dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="420dp"
+            android:textColor="#EEEBF3"
+            android:background="@drawable/btn_shape" />
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:id="@+id/start"
+            android:text="  Next  "
+            android:textSize="35dp"
+            android:layout_marginRight="30dp"
+            android:textColor="#EEEBF3"
+            android:background="@drawable/btn_shape" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
